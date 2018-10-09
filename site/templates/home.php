@@ -1,0 +1,5 @@
+<? snippet('header') ?>
+
+
+
+<? snippet('footer') ?>
