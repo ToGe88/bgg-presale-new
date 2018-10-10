@@ -41,4 +41,4 @@ Buyshipping: 4.00
 
 ----
 
-Buycurrency: €
+Buycurrency: EUR
