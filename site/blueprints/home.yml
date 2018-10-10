@@ -8,9 +8,29 @@ fields:
   description:
     label: Description
     type:  textarea
-  stage:
-    label: Stage Description
-    type: structure
-    entry: >
-    fields:
+  stageText:
+    label: Text
+    type: text
+  stagePromo:
+    label: Promo
+    type: text
+  stageImage:
+    label: Image
+    type: image
+  buyAmount:
+    label: Amount
+    type: text
+    default: 80
+  buyPrice:
+    label: Preis
+    type: text
+    default: 50
+  buyShipping:
+    label: Versand
+    type: text
+    default: 4
+  buyCurrency:
+    label: Währung
+    type: text
+    default: €
   

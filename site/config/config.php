@@ -34,6 +34,7 @@ c::set('languages', array(
     ),
   ));
 
+  c::set('debug', true);
 
 /*
 
