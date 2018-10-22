@@ -1,0 +1,18 @@
+title: Product
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  description:
+    label: Description
+    type:  textarea
+  sold:
+    label: Sold?
+    type: toggle
+    default: no
+  index:
+    label: Index
+    type: Text
+  

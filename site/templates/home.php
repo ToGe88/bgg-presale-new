@@ -30,9 +30,15 @@
         <section id="buy">
             <div class="buy__content__wrapper wrapper">
                 <div class="buy__content__holder">
-                    <? for($i = 1; $i < $page->buyAmount()->value() + 1; $i++) {
+                    <?  $index = 1; 
+                        foreach($site->index()->findBy('uid', 'products')->children() as $product) {
+                            snippet('molecules/_buyItem', array('number' => $index, 'price' => $page->buyPrice()));
+                            $index++;
+                        };
+                    ?>
+                    <!-- <? for($i = 1; $i < $page->buyAmount()->value() + 1; $i++) {
                         snippet('molecules/_buyItem', array('number' => $i, 'price' => $page->buyPrice()));
-                    } ?>
+                    } ?> -->
                 </div>
             </div>
         </section>

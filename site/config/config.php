@@ -36,6 +36,14 @@ c::set('languages', array(
 
   c::set('debug', true);
 
+  c::set('routes', array(
+    array(
+      'pattern' => array('(:any):(:num)'),
+      'action'  => function() {
+        echo $number.'Das ist meine Nummer';
+      }
+    )
+  ));
 /*
 
 ---------------------------------------
