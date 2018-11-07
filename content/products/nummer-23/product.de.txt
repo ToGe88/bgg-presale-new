@@ -1,0 +1,9 @@
+Title: Nummer 23
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 23

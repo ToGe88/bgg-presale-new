@@ -1,0 +1,9 @@
+Title: Nummer 32
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 32

@@ -1,0 +1,9 @@
+Title: Nummer 20
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 20

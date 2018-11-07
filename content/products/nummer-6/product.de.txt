@@ -1,0 +1,9 @@
+Title: Nummer 6
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 6

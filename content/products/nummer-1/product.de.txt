@@ -11,3 +11,7 @@ Sold: true
 ----
 
 Index: 1
+
+----
+
+Prodindex: 1

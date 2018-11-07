@@ -1,5 +1,4 @@
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="_payment-form">
-
     <!-- Identify your business so that you can collect the payments. -->
     <input type="hidden" name="business" value="pumuckl.ink@ok.de">
 

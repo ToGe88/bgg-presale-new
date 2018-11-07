@@ -1,0 +1,9 @@
+Title: Nummer 78
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 78

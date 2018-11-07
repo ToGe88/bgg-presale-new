@@ -1,0 +1,9 @@
+Title: Nummer 66
+
+----
+
+Sold: true
+
+----
+
+Prodindex: 66

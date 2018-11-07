@@ -1,10 +1,8 @@
 <? snippet('header') ?>
 
 <main>
-    <? if($rnumber = get('item_number')) {
-        echo $rnumber;
-    } ?>
     <article>
+        
         <section id="stage">
             <div class="stage__content__wrapper wrapper">
                 <div class="stage__content__holder">
@@ -32,13 +30,11 @@
                 <div class="buy__content__holder">
                     <?  $index = 1; 
                         foreach($site->index()->findBy('uid', 'products')->children() as $product) {
-                            snippet('molecules/_buyItem', array('number' => $index, 'price' => $page->buyPrice()));
+                            snippet('molecules/_buyItem', array('product' => $product, 'number' => $index, 'price' => $page->buyPrice()));
                             $index++;
                         };
                     ?>
-                    <!-- <? for($i = 1; $i < $page->buyAmount()->value() + 1; $i++) {
-                        snippet('molecules/_buyItem', array('number' => $i, 'price' => $page->buyPrice()));
-                    } ?> -->
+                    
                 </div>
             </div>
         </section>

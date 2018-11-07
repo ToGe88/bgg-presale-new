@@ -1,11 +1,11 @@
 <script>
     var app = new Vue({
         el: '#buy',
-        mounted: function() {
-            this.updateBoughtItems();
-        },
         data: {
             number: 1
+        },
+        mounted: function() {
+            this.disableSold();
         },
         methods: {
             updateForm: function (number) {
@@ -22,11 +22,11 @@
                     if(numberValue.includes('number')) {
                         const valueArray = numberValue.split('/');
                         valueArray.pop();
-                        valueArray.push('number:'+number);
+                        valueArray.push('?number='+number);
                         formSelector.querySelector('#return').value = valueArray.join('/');
                     } else {
                         const valueArray = numberValue.split('/');
-                        valueArray.push('number:'+number);
+                        valueArray.push('?number='+number);
                         formSelector.querySelector('#return').value = valueArray.join('/');
                     }
                 };
@@ -36,12 +36,15 @@
                     cartSelector.querySelector('#cart__item-number').innerHTML = number;
                 }   
             },
-            updateBoughtItems: function () {
-                const urlParams = new URLSearchParams(window.location.search);
-                let boughtNumber = urlParams.get('number');
-                console.log(boughtNumber);
-            }                
-        }
+            disableSold: function () {
+                const soldItemsButtons = document.querySelectorAll('button.sold');
+                const buttonsArray = Array.from(soldItemsButtons);
+                buttonsArray.forEach((element) => {
+                    element.setAttribute('disabled', true);
+                })
+            }         
+        },
+
     });
 
 </script>

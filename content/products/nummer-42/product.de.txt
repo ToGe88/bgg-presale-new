@@ -1,0 +1,9 @@
+Title: Nummer 42
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 42

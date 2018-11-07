@@ -38,9 +38,10 @@ c::set('languages', array(
 
   c::set('routes', array(
     array(
-      'pattern' => array('(:any):(:num)'),
-      'action'  => function() {
-        echo $number.'Das ist meine Nummer';
+      'method' => 'GET',
+      'pattern' => '?number=1',
+      'action' => function() {
+        var_dump('Das ist meine Nummer');
       }
     )
   ));

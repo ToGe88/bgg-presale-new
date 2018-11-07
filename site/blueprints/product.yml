@@ -12,7 +12,7 @@ fields:
     label: Sold?
     type: toggle
     default: no
-  index:
+  prodIndex:
     label: Index
     type: Text
   

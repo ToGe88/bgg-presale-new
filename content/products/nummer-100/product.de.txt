@@ -1,0 +1,9 @@
+Title: Nummer 100
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 100

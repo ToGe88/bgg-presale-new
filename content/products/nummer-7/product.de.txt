@@ -1,0 +1,9 @@
+Title: Nummer 7
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 7

@@ -1,0 +1,9 @@
+Title: Nummer 40
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 40

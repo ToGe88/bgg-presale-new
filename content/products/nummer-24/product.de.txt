@@ -1,0 +1,9 @@
+Title: Nummer 24
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 24

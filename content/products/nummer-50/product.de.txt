@@ -1,0 +1,9 @@
+Title: Nummer 50
+
+----
+
+Sold: false
+
+----
+
+Prodindex: 50

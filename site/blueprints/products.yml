@@ -1,5 +1,5 @@
 title: Products
-pages: true
+pages: product
 files: true
 fields:
   title:
