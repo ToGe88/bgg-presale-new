@@ -2,8 +2,12 @@ Title: Nummer 88
 
 ----
 
-Sold: true
+Sold: false
 
 ----
 
 Prodindex: 88
+
+----
+
+Description: 

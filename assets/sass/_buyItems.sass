@@ -9,13 +9,68 @@
     height: 15vh
     float: left
 
+    &.sold > .buy-item__content > .buy-item__number h2
+
+        & > span.strike-through
+            display: block
+
 .buy-item__content
     background: white
+
+    & button
+        position: absolute
+        top: 70%
+        left: 50%
+        transform: translate(-50%,-50%)
 
 .buy-item__number
     
     & h2    
         text-align: center
-        font-family: Helvetica
-        font-size: 40px
+        // font-family: Helvetica
+        font-size: 6.5vw
+        position: relative
+        display: block
+        // float: left
+        // clear: both
         line-height: calc(15vh - 10px)
+
+span.strike-through
+    display: none
+    position: absolute
+    background: $soft-black
+    top: 50%
+    height: 6px
+    // width: 100%
+    left: 0px
+    right: 0px
+    transform: rotate(30deg)
+
+@media screen and (max-width: 600px)
+    .buy-item__wrapper
+        width: $buyItemWidthMobile
+        height: auto
+
+    .buy-item__number
+    
+         & h2  
+            font-size: 15vw
+            line-height: calc(10vh - 10px)
+
+    .buy-item__content
+
+        button
+            font-size: 10px
+            padding: 3px 6px
+            top: 70%
+
+    span.strike-through
+        display: none
+        position: absolute
+        background: $soft-black
+        top: 50%
+        height: 6px
+        // width: 100%
+        left: 0px
+        right: 0px
+        transform: rotate(30deg)

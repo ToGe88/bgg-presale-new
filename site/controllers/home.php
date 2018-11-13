@@ -1,14 +1,14 @@
 <? if($number = get('number')) {
-    echo $number;
+    // echo $number;
     $element = page('products')->children()->findBy('prodIndex', $number);
-    echo $element->sold();
+    // echo $element->sold();
     if($element->sold() != 'true') {
-        echo 'Im trying!';
+        // echo 'Im trying!';
         try {
             page($element)->update(array(
                 'sold' => 'true',
             ), 'de');
-            echo 'The book was sold.';
+            // echo 'The book was sold.';
         } catch(Exception $e) {
             echo $e->getMessage();
         }

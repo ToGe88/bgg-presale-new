@@ -1,0 +1,41 @@
+button, select
+    background: white
+    color: $soft-black
+    border: 2px solid $soft-black
+    padding: 6px 10px
+    font-size: 10px
+    letter-spacing: .1em
+    transition: all .3s ease
+    font-family: $s-light
+    cursor: pointer
+    position: relative
+    display: inline-block
+
+    &:hover 
+        background: $soft-black
+        color: white
+        border: 2px solid transparent
+
+
+    &:focus
+        outline: none
+    
+    &[disabled="true"]
+        display: none
+
+select
+    display: block
+    font-size: 12px
+    border-radius: 0
+    margin-bottom: 40px
+    width: 100%
+    position: relative
+
+    &::after
+        content: ''
+        position: absolute
+        width: 20px
+        height: 6px
+        background: red
+        top: 5px
+        right: 10px
