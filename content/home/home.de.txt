@@ -33,7 +33,7 @@ Buyamount: 80
 
 ----
 
-Buyprice: 50.00
+Buyprice: 0.01
 
 ----
 

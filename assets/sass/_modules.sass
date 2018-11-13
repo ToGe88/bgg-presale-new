@@ -1,6 +1,10 @@
 *
     box-sizing: border-box
 
+html
+    color: $soft-black
+    font-family: $s-light
+
 section
     position: relative
     display: block
@@ -9,3 +13,23 @@ section
 
 .wrapper
     padding: 40px
+
+iframe
+    width: 70%
+    position: relative
+    margin: 0 auto
+    display: block
+
+.wrapper--small
+    max-width: 70vw
+    margin: 0 auto
+
+@media screen and (max-width: 600px)
+    .wrapper
+        padding: 20px
+
+    .wrapper--small
+        max-width: 100%
+
+    iframe
+        width: 100%

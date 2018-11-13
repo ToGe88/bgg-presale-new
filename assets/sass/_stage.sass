@@ -1,0 +1,70 @@
+#stage
+    height: 93vh
+    padding: 40px
+
+    .stage__content__wrapper
+        height: 100%
+        width: 100%
+        position: relative
+        background: yellow
+
+        .stage__content__image
+            height: 100%
+            width: 100%
+            position: absolute
+            top: 0
+            left: 0
+            object-fit: cover
+
+            img 
+                object-fit: cover
+                object-position: center
+                width: 100%
+                max-height: 100%
+                display: block
+
+        .stage__content__title
+            padding: 4vh 0
+            background: white
+            z-index: 20
+            position: absolute
+            width: 100%
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            text-align: center
+
+            h1
+                display: inline-block
+                text-align: left
+
+        .stage__content__promo
+            position: absolute
+            z-index: 100
+            background: $soft-black
+            width: 200px
+            height: auto
+            text-align: center
+            padding: 10px 20px
+            color: white
+            top: 25%
+            right: 15%
+            box-shadow: 0px 0px 5px 0px #111
+
+            & p
+                font-size: 24px
+                font-family: $s-light
+
+@media screen and (max-width: 600px)
+    #stage
+        height: 60vh
+        padding: 20px
+
+        .stage__content__wrapper
+
+            .stage__content__promo
+                display: none
+                
+                & p
+                    font-size: 16px
+                    font-family: $s-light
